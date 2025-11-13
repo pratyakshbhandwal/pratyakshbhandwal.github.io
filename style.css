@@ -134,6 +134,8 @@ nav a:hover {
 
 .hero-image-box img {
   border-radius: 18px;
+  height: 250px;
+  width: 1000px;
 }
 
 /* SECTIONS */
