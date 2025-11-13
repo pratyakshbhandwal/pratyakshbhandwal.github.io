@@ -1,141 +1,230 @@
+<!-- The images and assets used in this project are not locally saved and are sourced from the web -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Under Construction</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pratyaksh Bhandwal – Portfolio</title>
+  <meta name="description" content="Personal portfolio website: details, skills, projects and contact."/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-  box-sizing:border-box;
-}
-
-body{
-  margin:0;
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-family: "Poppins", Arial, sans-serif;
-  color:white;
-  overflow:hidden;
-  background:linear-gradient(135deg,#ff00c8,#ff7e00,#00eaff,#9120ff,#ff00c8);
-  background-size:400% 400%;
-  animation:bgMove 14s ease infinite;
-}
-
-@keyframes bgMove{
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-.box{
-  background:rgba(25,25,35,0.55);
-  padding:65px 85px;
-  border-radius:32px;
-  border:2px solid rgba(255,255,255,0.25);
-  backdrop-filter:blur(18px);
-  text-align:center;
-  max-width:780px;
-  box-shadow:0 0 35px rgba(255,255,255,0.35),
-             0 0 55px rgba(255,0,200,0.5);
-  animation:float 5s ease-in-out infinite;
-}
-
-@keyframes float{
-  0%{transform:translateY(0);}
-  50%{transform:translateY(-15px);}
-  100%{transform:translateY(0);}
-}
-
-.dot{
-  width:18px;height:18px;border-radius:50%;
-  background:#ffef00;
-  display:inline-block;
-  margin-right:12px;
-  animation:pulse 1.4s infinite;
-  box-shadow:0 0 15px #ffef00;
-}
-
-@keyframes pulse{
-  0%{transform:scale(.9); opacity:.9;}
-  50%{transform:scale(1.4); opacity:1;}
-  100%{transform:scale(.9); opacity:.9;}
-}
-
-h1{
-  margin:25px 0 16px;
-  font-size:56px;
-  text-shadow:0 0 10px #fff;
-}
-
-p{
-  margin:0;
-  font-size:22px;
-  opacity:.9;
-}
-
-.socials{
-  margin-top:30px;
-  display:flex;
-  gap:30px;
-  align-items:center;
-  justify-content:center;
-}
-
-.icon{
-  width:40px;
-  height:40px;
-  opacity:.85;
-  cursor:pointer;
-  transition:.25s;
-  filter:drop-shadow(0 0 4px rgba(255,255,255,.6));
-}
-
-.icon:hover{
-  opacity:1;
-  transform:scale(1.2);
-  filter:drop-shadow(0 0 16px white);
-}
-
-.footer{
-  margin-top:40px;
-  font-size:17px;
-  opacity:.8;
-}
-</style>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="box">
-    <div><span class="dot"></span>Under Construction</div>
-    <h1>We’re building this page</h1>
-    <p>Please check back soon!</p>
-
-    <div class="socials">
-      <!-- instagram -->
-      <a href="https://instagram.com/pratyakshbhandwal" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 2c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm4.5-3.8c-.5 0-.9.4-.9.9s.4.9.9.9.9-.4.9-.9-.4-.9-.9-.9z"/>
-        </svg>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav-bar">
+      <a class="brand" href="#home">
+        <span>Pratyaksh Bhandwal</span>
       </a>
 
-      <!-- github -->
-      <a href="https://github.com/pratyakshbhandwal" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.4.8-4.1-1.6-4.1-1.6-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1 .1 1.6 1.2 1.6 1.2 1 1.8 2.8 1.3 3.5 1 .1-.7.4-1.3.7-1.6-2.7-.3-5.6-1.4-5.6-6.1 0-1.3.5-2.5 1.3-3.4-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.5 1.3a12 12 0 0 1 6.4 0c2.5-1.6 3.5-1.3 3.5-1.3.7 1.7 .2 3 .1 3.3 .8 .9 1.3 2.1 1.3 3.4 0 4.7-2.9 5.8-5.6 6.1 .4 .4 .8 1.1 .8 2.3v3.4c0 .3 .2 .7 .8 .6A12 12 0 0 0 12 .5z"/>
-        </svg>
-      </a>
+      <nav>
+        <ul>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#education-section">Education & Skills</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn" href="https://github.com/pratyakshbhandwal" target="_blank">GitHub</a>
     </div>
+  </header>
 
-    <p class="footer">© <span id="y"></span> Pratyaksh Bhandwal</p>
-  </div>
+  <main id="home" class="container">
 
-<script>
-  document.getElementById('y').textContent = new Date().getFullYear()
-</script>
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div>
+        <span class="tag">Open to Work · 2025</span>
+        <h1>
+          Hi, I’m <span style="color:var(--accent-2)">Pratyaksh</span> — a developer focused on building practical and impactful solutions.
+        </h1>
+        <p>
+          I enjoy crafting responsive interfaces, solving real problems with code, and learning new technologies. This is a compact portfolio showcasing my background, skills, selected projects, and how to reach me.
+        </p>
+
+        <div style="display:flex;gap:12px;margin-top:18px">
+          <a class="btn" href="#projects-section">View Projects</a>
+          <a class="chip" href="https://linkedin.com/in/pratyakshbhandwal" target="_blank">LinkedIn</a>
+          <a class="chip" href="mailto:bhandwalpratyaksh@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-image-box">
+        <img src="https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=1200&auto=format&fit=crop">
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about-section">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p class="text-muted">Who I am and what I do</p>
+      </div>
+
+      <div class="about-section">
+        <article class="card">
+          <p>I'm an undergraduate student passionate about full-stack development, system design, networking, machine learning and cybersecurity.</p>
+          <p>I enjoy reading tech blogs and mentoring juniors. I’m seeking opportunities in web development / ML .</p>
+        </article>
+
+        <aside class="card">
+          <h3>Quick Facts</h3>
+          <ul class="list">
+            <li>Location: New Delhi, India</li>
+            <li>Looking for: SDE / Web opportunities</li>
+            <li>Interests: Web, Database, ML, cybersecurity</li>
+            <li>Languages: C/C++, JavaScript, Python</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EDUCATION & SKILLS -->
+    <section id="education-section">
+      <div class="section-header">
+        <h2>Education & Skills</h2>
+        <p class="text-muted">What I’ve studied and use daily</p>
+      </div>
+
+      <div class="three-column">
+        <div class="card">
+          <h3>Education</h3>
+          <ul class="list">
+            <li><strong>Delhi Technological University</strong> — B.Tech (2025–2029)</li>
+            <li>Coursework: Pandas, SciKit-Learn, Matplot, Intermediate ML</li>
+            
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Core Skills</h3>
+          <div style="display:flex;flex-wrap:wrap;gap:10px">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Git/GitHub</span>
+            <span class="chip">Linux</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Proficiency</h3>
+          <label>JavaScript</label>
+          <div class="bar"><span style="width:82%"></span></div>
+
+          <label>React</label>
+          <div class="bar"><span style="width:65%"></span></div>
+
+          <label>Node.js</label>
+          <div class="bar"><span style="width:77%"></span></div>
+
+          <label>MongoDB</label>
+          <div class="bar"><span style="width:65%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects-section">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p class="text-muted">A few things I’ve built recently</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="card project-card">
+          <div class="img-box">
+            <img src="https://developer.chrome.com/static/docs/puppeteer/images/hero.png">
+          </div>
+          <h3>DTU Saarthi Scraper</h3>
+          <p>Puppeteer scraper that extracts hostel data & images and stores them in MongoDB.</p>
+          <div class="links">
+            <a class="chip disabledlink" href="#projects">not open sourced</a>
+          </div>
+        </article>
+
+        
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact-section">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p class="text-muted">Let’s work together</p>
+      </div>
+
+      <div class="contact-section">
+        <div class="card">
+          <form action="mailto:bhandwalpratyaksh@gmail.com" method="post">
+            <input name="name" placeholder="Your name" required>
+            <input name="email" type="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Your message"></textarea>
+            <button class="btn">Send Message</button>
+          </form>
+        </div>
+
+        <aside class="card">
+            <h3>Contact Information</h3>
+
+            <ul class="list" style="display:flex; gap:18px; align-items:center; padding-top:10px;">
+
+                <!-- Email -->
+                <li style="text-align:center;">
+                <a href="mailto:bhandwalpratyaksh@gmail.com" title="Email">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" 
+                        alt="Email" style="width:40px; filter:invert(100%);">
+                </a>
+                
+                </li>
+
+                <!-- GitHub -->
+                <li>
+                <a href="https://github.com/pratyakshbhandwal" target="_blank" title="GitHub">
+                    <img src="https://img.icons8.com/ios-glyphs/60/ffffff/github.png" 
+                        alt="GitHub" style="width:40px; filter:invert(100%);">
+                </a>
+                </li>
+
+                <!-- LinkedIn -->
+                <li>
+                <a href="https://linkedin.com/in/pratyakshbhandwal" target="_blank" title="LinkedIn">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" 
+                        alt="LinkedIn" style="width:40px; filter:invert(100%);">
+                </a>
+                </li>
+
+            </ul>
+            <div style="margin-top:6px; font-size:14px; color:#9aa3b2;">
+                    bhandwalpratyaksh@gmail.com
+                </div>
+        </aside>
+
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">© <span id="y"></span> Pratyaksh Bhandwal</div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
